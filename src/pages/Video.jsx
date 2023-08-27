@@ -124,27 +124,37 @@ const Video = () => {
   const [channel, setChannel] = useState({});
 
   const handleLike = async () => {
-    await axios.put(`/users/like/${currentVideo._id}`);
+    await axios.put(
+      `https://chitra-sh7b.onrender.com/api/users/like/${currentVideo._id}`
+    );
     dispatch(like(currentUser._id));
   };
   const handleDislike = async () => {
-    await axios.put(`/users/dislike/${currentVideo._id}`);
+    await axios.put(
+      `https://chitra-sh7b.onrender.com/api/users/dislike/${currentVideo._id}`
+    );
     dispatch(dislike(currentUser._id));
   };
 
   const handleSub = async () => {
     currentUser.subscribedUsers.includes(channel._id)
-      ? await axios.put(`/users/unsub/${channel._id}`)
-      : await axios.put(`/users/sub/${channel._id}`);
+      ? await axios.put(
+          `https://chitra-sh7b.onrender.com/api/users/unsub/${channel._id}`
+        )
+      : await axios.put(
+          `https://chitra-sh7b.onrender.com/api/users/sub/${channel._id}`
+        );
     dispatch(subscription(channel._id));
   };
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const videoRes = await axios.get(`/videos/find/${path}`);
+        const videoRes = await axios.get(
+          `https://chitra-sh7b.onrender.com/api/videos/find/${path}`
+        );
         console.log(videoRes);
         const channelRes = await axios.get(
-          `/users/find/${videoRes.data.userId}`
+          `https://chitra-sh7b.onrender.com/api/users/find/${videoRes.data.userId}`
         );
         console.log(channelRes);
         setChannel(channelRes.data);

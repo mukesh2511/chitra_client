@@ -37,10 +37,13 @@ const Comments = ({ videoId }) => {
   const Addcomment = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post(`/comments/${videoId}`, {
-        desc: PushComment,
-        videoId,
-      });
+      const res = await axios.post(
+        `https://chitra-sh7b.onrender.com/api/comments/${videoId}`,
+        {
+          desc: PushComment,
+          videoId,
+        }
+      );
       const newComment = res.data;
       setPushComment("");
       setComments([...comments, newComment]);

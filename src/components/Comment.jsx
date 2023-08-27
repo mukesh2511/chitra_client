@@ -41,7 +41,9 @@ const Comment = ({ comment }) => {
 
   useEffect(() => {
     const fetchComment = async () => {
-      const res = await axios.get(`/users/find/${comment.userId}`);
+      const res = await axios.get(
+        `https://chitra-sh7b.onrender.com/api/users/find/${comment.userId}`
+      );
       setChannel(res.data);
     };
     fetchComment();

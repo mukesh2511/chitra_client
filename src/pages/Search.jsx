@@ -16,7 +16,9 @@ const Search = () => {
 
   useEffect(() => {
     const fetchVideos = async () => {
-      const res = await axios.get(`/videos/search${query}`);
+      const res = await axios.get(
+        `https://chitra-sh7b.onrender.com/api/videos/search${query}`
+      );
       setVideos(res.data);
     };
     fetchVideos();
