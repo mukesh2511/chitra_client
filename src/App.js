@@ -8,7 +8,6 @@ import Home from "./pages/Home";
 import Video from "./pages/Video";
 import SignIn from "./pages/SignIn";
 import Search from "./pages/Search";
-import { useSelector } from "react-redux";
 
 const Container = styled.div`
   display: flex;
