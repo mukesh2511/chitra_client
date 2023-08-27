@@ -110,12 +110,23 @@ const SignIn = () => {
   };
 
   //TODO: REGISTER FUNCTIONALITY
+  const handleRegister = async () => {
+    try {
+      dispatch(loginStart());
+      const res = await axios.post("/auth/signup", { name, email, password });
+      if (!res) {
+        dispatch(loginFailure());
+      }
+      dispatch(loginSuccess(res.data));
+      navigate("/");
+    } catch (error) {}
+  };
 
   return (
     <Container>
       <Wrapper>
         <Title>Sign in</Title>
-        <SubTitle>to continue to CHITRA-Msr</SubTitle>
+        <SubTitle>to continue to CHITRA</SubTitle>
         <Input
           placeholder="username"
           onChange={(e) => setName(e.target.value)}
@@ -139,7 +150,7 @@ const SignIn = () => {
           placeholder="password"
           onChange={(e) => setPassword(e.target.value)}
         />
-        <Button>Sign up</Button>
+        <Button onClick={handleRegister}>Sign up</Button>
       </Wrapper>
       <More>
         English(USA)
