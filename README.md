@@ -15,20 +15,17 @@ Upload videos, subscribe functionality, like & comment functionality & recommend
 ## Screenshots
 
 - Home page
-![Screenshot 1](https://github.com/mukesh2511/myDiary_Client/blob/master/images/home.png)
+![https://github.com/mukesh2511/chitra_client/blob/master/images/home.png)
 
 
-- Edit Note
+- Video Page
 
-![Screenshot 2](https://github.com/mukesh2511/myDiary_Client/blob/master/images/edit.png)
-
-
-- Login Page
-
-![Screenshot 5](https://github.com/mukesh2511/myDiary_Client/blob/master/images/login.png)
+![https://github.com/mukesh2511/chitra_client/blob/master/images/video.png)
 
 
-- SignUp page
+- SignIn page
 
-![Screenshot 7](https://github.com/mukesh2511/myDiary_Client/blob/master/images/signup.png)
+![Screenshot 5](https://github.com/mukesh2511/chitra_client/blob/master/images/signIn.png)
+
+
 
