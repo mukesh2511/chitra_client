@@ -15,17 +15,17 @@ Upload videos, subscribe functionality, like & comment functionality & recommend
 ## Screenshots
 
 - Home page
-![Screenshot 3][https://github.com/mukesh2511/chitra_client/blob/master/images/home.png)
+![Screenshot 1](https://github.com/mukesh2511/chitra_client/blob/master/images/home.png)
 
 
 - Video Page
 
-![Screenshot 4][https://github.com/mukesh2511/chitra_client/blob/master/images/video.png)
+![Screenshot 2](https://github.com/mukesh2511/chitra_client/blob/master/images/video.png)
 
 
 - SignIn page
 
-![Screenshot 5](https://github.com/mukesh2511/chitra_client/blob/master/images/signIn.png)
+![Screenshot 3](https://github.com/mukesh2511/chitra_client/blob/master/images/signIn.png)
 
 
 
